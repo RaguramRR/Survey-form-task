@@ -1,8 +1,12 @@
-.fa-star {
-    font-size: 50px;
-    color: rgb(168, 149, 149);
+.star-rating {
+    font-size: 54px; 
     cursor: pointer;
 }
-.star.checked {
-    color: gold;
+
+.star {
+    color: gray; 
+}
+
+.star.active {
+    color: rgb(182, 158, 24); 
 }

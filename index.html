@@ -52,33 +52,17 @@
                 <div class="experience-ratings">
                     <h5><strong>Your Experience <span style="color: red;">*</span></strong></h5>
                     <div class="rate">
-                            </head>
-                            <body>
-                            <span class="fa fa-star" onclick="ratestar(1)"></span>
-                            <span class="fa fa-star" onclick="ratestar(2)"></span>
-                            <span class="fa fa-star" onclick="ratestar(3)"></span>
-                            <span class="fa fa-star" onclick="ratestar(4)"></span>
-                            <span class="fa fa-star" onclick="ratestar(5)"></span>
-                            </body>
-                            <script>
-                                let currentRating = 0;
-                        
-                                function rateStar(star) {
-                                    currentRating = star;
-                                    highlightStars(star);
-                                }
-                        
-                                function highlightStars(star) {
-                                    const stars = document.querySelectorAll('.star');
-                                    stars.forEach((s, index) => {
-                                        if (index < star) {
-                                            s.classList.add('checked');
-                                        } else {
-                                            s.classList.remove('checked');
-                                        }
-                                    });
-                                }
-                            </script>  
+                      <div class="star-rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                        <p id="rating-value"></p>
+                        <script src="script.js"></script>  
+                    </div>
+                    
+                           
                          
                         
                     <p>Overall,How would you rate your Experience with us ? </p>
